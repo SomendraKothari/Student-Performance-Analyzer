@@ -23,6 +23,7 @@ results = data_frame.loc[:,['id','Name','Result']]
 print(f"Topper : {topper.id}    {topper.Name}")
 print(f"Class Average : {cls_avg}")
 print(f"Students with more than 75 Percentage :\n {morethan75.Name}")
+# For plotting graph
 top25 = results.iloc[:25,2]
 top25=pd.to_numeric(top25.str.replace("%","",regex=False),errors='coerce')
 graph = top25.plot(kind='bar')
