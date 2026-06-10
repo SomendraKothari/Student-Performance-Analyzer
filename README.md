@@ -16,6 +16,5 @@ Analyze student performance using Python and Pandas
 
 ## Dataset
 CSV dataset containing student marks.
-#!/bin/bash
-curl -L -o ~/Downloads/students-marksheet-dataset.zip\
-  https://www.kaggle.com/api/v1/datasets/download/rohithmahadevan/students-marksheet-dataset
+<br>
+Link: https://www.kaggle.com/api/v1/datasets/download/rohithmahadevan/students-marksheet-dataset
