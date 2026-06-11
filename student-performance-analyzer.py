@@ -26,10 +26,10 @@ results = data_frame.loc[:,['id','Name','Result']]
 # For plotting graph
 top25 = results.iloc[:25,2]
 top25=pd.to_numeric(top25.str.replace("%","",regex=False),errors='coerce')
-# graph = top25.plot(kind='bar')
-# plt.xlabel('Id')
-# plt.ylabel('Percentage')
-# plt.title('First 25 Student Performance')
-# plt.xticks(rotation=360)
-# plt.show()
-# results.to_csv("RESULTS",index=False)
+graph = top25.plot(kind='bar')
+plt.xlabel('Id')
+plt.ylabel('Percentage')
+plt.title('First 25 Student Performance')
+plt.xticks(rotation=360)
+plt.show()
+results.to_csv("RESULTS",index=False)
