@@ -1,5 +1,5 @@
 # Student-Performance-Analyzer
-Analyze student performance using Python and Pandas
+Analyze student performance using Python, Pandas and Matplotlib
 <br>
 
 ## Features
@@ -16,5 +16,4 @@ Analyze student performance using Python and Pandas
 
 ## Dataset
 CSV dataset containing student marks.
-<br>
-Link: https://www.kaggle.com/api/v1/datasets/download/rohithmahadevan/students-marksheet-dataset
+Students.csv
