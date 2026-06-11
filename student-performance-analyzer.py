@@ -1,14 +1,14 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 # Store CSV as data_frame
-data_frame = pd.read_csv("E:/coding/DATASETS/Student Performance/marksheet.csv")
+data_frame = pd.read_csv("Students.csv")
 # Store total marks of all students from data_frame
 total_marks=data_frame.loc[:,['Science','English','Maths','History']].apply(sum,axis=1)
 # Check for index having maximum marks i.e., topper's marks and store its id and name
 topper = data_frame.loc[total_marks.idxmax(),['id','Name']]
 print(f"Topper : {topper.id}    {topper.Name}")
 # Calculate the class average
-cls_avg = total_marks.sum()/len(data_frame)
+cls_avg = total_marks.mean()
 print(f"Class Average : {cls_avg}")
 # For students who have failed in one or more subjects
 fail = data_frame.loc[(data_frame.Science<33) | (data_frame.English<33) | (data_frame.Maths<33) | (data_frame.History<33),['id']]
