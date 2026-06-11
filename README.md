@@ -1,5 +1,5 @@
 # Student-Performance-Analyzer
-Analyze student performance using Python and Pandas
+Analyze student performance using Python, Pandas and Matplotlib
 <br>
 
 ## Features
